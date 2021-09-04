@@ -2,7 +2,6 @@
 // Scaffolding
 // --------------------------------------------------
 
-
 // Reset the box-sizing
 //
 // Heads up! This reset may cause conflicts with some third-party widgets.
@@ -16,7 +15,6 @@
   @include box-sizing(border-box);
 }
 
-
 // Body reset
 
 html {
@@ -29,7 +27,22 @@ body {
   font-size: $font-size-base;
   line-height: $line-height-base;
   color: $text-color;
-  background-color: $body-bg;
+  background: rgb(147, 213, 219);
+  background: linear-gradient(
+    180deg,
+    rgba(236, 204, 156, 1) 0%,
+    rgba(236, 204, 156, 1) 50%,
+    rgba(147, 213, 219, 1) 50%,
+    rgba(147, 213, 219, 1) 100%
+  );
+  padding: 30px;
+  @media screen and (max-width: $screen-xs-max) {
+    padding: 15px;
+  }
+}
+
+.body-container {
+  background: black;
 }
 
 // Reset fonts for relevant elements
@@ -41,7 +54,6 @@ textarea {
   font-size: inherit;
   line-height: inherit;
 }
-
 
 // Links
 
@@ -59,7 +71,6 @@ a {
   }
 }
 
-
 // Figures
 //
 // We reset this here because previously Normalize had no `figure` margins. This
@@ -68,7 +79,6 @@ a {
 figure {
   margin: 0;
 }
-
 
 // Images
 
