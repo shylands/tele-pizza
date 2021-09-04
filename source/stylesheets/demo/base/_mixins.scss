@@ -2,6 +2,7 @@
 // --------------------------------------------------
 
 // Utilities
+
 @import "mixins/hide-text";
 @import "mixins/opacity";
 @import "mixins/image";
@@ -38,3 +39,54 @@
 @import "mixins/nav-vertical-align";
 @import "mixins/grid-framework";
 @import "mixins/grid";
+
+// Link States
+
+@mixin link-states {
+  a {
+    text-decoration: underline;
+    font-weight: 400;
+  }
+  a:hover {
+    color: $link-hover;
+    -webkit-transition: top 0.04s ease-out;
+    transition: top 0.04s ease-out;
+  }
+  a:active {
+    color: $link-active;
+    position: relative;
+    top: 1px;
+  }
+}
+
+@mixin links-on-light {
+  a {
+    font-weight: 400;
+    text-decoration: underline;
+    color: $link;
+  }
+  @include link-states;
+}
+
+@mixin links-on-dark {
+  @include link-states;
+  a {
+    text-decoration: underline;
+    color: $white;
+  }
+  button {
+    text-decoration: underline;
+    color: $white;
+  }
+}
+
+@mixin no-underline {
+  text-decoration: none !important;
+  a {
+    text-decoration: none !important;
+  }
+  &:hover,
+  &.hover {
+    text-decoration: none !important;
+  }
+}

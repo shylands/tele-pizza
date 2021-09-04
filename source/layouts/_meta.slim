@@ -4,11 +4,13 @@ meta content="ie=edge" http-equiv="x-ua-compatible"
 meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"
 
 // Set dynamic and default meta
-- title = current_page.data.title || "Kaldi - Middleman + Netlify CMS Example"
-- description = current_page.data.description || "A simple example to get started with Middleman and Netlify CMS"
+- title = current_page.data.title || "Pizza takeaway and delivery in Banbridge"
+- description = current_page.data.description || "Tele Pizza is an independent pizzeria based in Banbridge, Northern Ireland. We offer a diverse range of pizzas, side orders and cold drinks."
 //Change this to your domain
 - url = "https://brave-hypatia-0b12fd.netlify.com"
 - image = current_page.data.image || "/images/uploads/homepage-hero.jpg"
+
+
 
 title =title
 
@@ -24,3 +26,7 @@ meta name="twitter:card" content="summary_large_image"
 meta name="twitter:title" content=title
 meta name="twitter:description" content=description
 meta name="twitter:image" content=(url + image_path(image))
+
+link href="https://fonts.googleapis.com" rel="preconnect" /
+link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" /
+link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;600&display=swap" rel="stylesheet" /

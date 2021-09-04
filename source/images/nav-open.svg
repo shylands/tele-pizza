@@ -1,1 +1,9 @@
-<svg enable-background="new 0 0 80 80" height="80" viewBox="0 0 80 80" width="80" xmlns="http://www.w3.org/2000/svg"><path d="m28 32v2h24v-2zm0 16h24v-2h-24zm0-7h24v-2h-24z" fill="#5c6066"/></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Artboard</title>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="nav-open" transform="translate(28.000000, 32.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <path d="M0,0 L0,2 L24,2 L24,0 L0,0 Z M0,16 L24,16 L24,14 L0,14 L0,16 Z M0,9 L24,9 L24,7 L0,7 L0,9 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>

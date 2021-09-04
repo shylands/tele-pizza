@@ -26,6 +26,7 @@ body {
   font-family: $font-family-base;
   font-size: $font-size-base;
   line-height: $line-height-base;
+  font-family: "Barlow Condensed", sans-serif;
   color: $text-color;
   background: rgb(147, 213, 219);
   background: linear-gradient(
@@ -36,13 +37,16 @@ body {
     rgba(147, 213, 219, 1) 100%
   );
   padding: 30px;
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   @media screen and (max-width: $screen-xs-max) {
     padding: 15px;
   }
 }
 
 .body-container {
-  background: black;
 }
 
 // Reset fonts for relevant elements

@@ -1,22 +1,8 @@
 footer {
-  position: relative;
-  background-color: $text-color;
-
-  .header-primary {
-    position: relative;
-    height: auto;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
-
-    .navigation {
-      background-color: transparent;
-      a {
-        color: #fff;
-      }
-    }
-  }
-
   .footer-content {
-    padding: 30px 15px 60px;
+    padding: 5px 10px 5px 0;
+    display: flex;
+    justify-content: flex-end;
   }
 
   .newsletter {
@@ -26,29 +12,21 @@ footer {
   }
 
   .social {
-    @extend %column;
-    @extend %col-md-6;
-    @include clearfix;
-    margin-top: 40px;
+    height: 20px;
     .icons {
       float: right;
     }
     a {
-      display: inline-block;
+      display: inline-flex;
       text-align: right;
-      margin-left: 15px;
-      width: 60px; 
-      height: 60px;
-      padding: 15px;
-      background-color: #fff;
-      border-radius: 50%
-
+      margin-left: 20px;
+      width: 20px;
+      height: 20px;
     }
     img {
       width: 100%;
     }
   }
-
 
   label {
     display: block;
@@ -56,15 +34,15 @@ footer {
     font-size: 18px;
     font-weight: 700;
     color: rgba(255, 255, 255, 1);
-    
   }
-  button, input {
+  button,
+  input {
     display: inline-block;
     height: 60px;
     padding: 15px;
     border: none;
     font-size: 18px;
-    line-height: 1.5
+    line-height: 1.5;
   }
   input {
     width: 80%;
@@ -75,49 +53,26 @@ footer {
 
   button {
     width: 20%;
-    background: $primary-color;
+    background: $black;
     color: #fff;
     border-radius: 0 4px 4px 0;
     font-weight: 700;
   }
 }
 
-  
 @media screen and (max-width: $screen-xs-max) {
   footer {
-    .header-primary {
-      .logo  a {
-        padding-left: 15px
-      }
-      .nav-button {
-        display: none;
-      }
-      .navigation {
-        display: block;
-        position: relative;
-        top: auto;
-        border-top: 2px solid rgba(255, 255, 255, 0.1);
-        li {
-          margin: 15px 0;
-        }
-      }
-      ul {
-        padding-left: 15px;
-      }
-    }
     input {
       width: 60%;
     }
     button {
       width: 40%;
-    } 
+    }
 
     .footer-content {
-      padding: 15px 0 30px;
     }
 
     .social {
-      margin-top: 30px;
       .icons {
         float: none;
       }

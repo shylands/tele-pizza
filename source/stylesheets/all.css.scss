@@ -2,27 +2,29 @@
 @charset 'utf-8';
 
 //bootstrap stuff
-@import 'demo/base/variables';
-@import 'demo/base/mixins';
-@import 'demo/base/normalize';
-@import 'demo/base/scaffolding';
-@import 'demo/base/type';
+@import "demo/base/variables";
+@import "demo/base/mixins";
+@import "demo/base/normalize";
+@import "demo/base/scaffolding";
+@import "demo/base/type";
 
-@import 'demo/base/colors';
-@import 'demo/base/typography';
-@import 'demo/base/grid';
-@import 'demo/base/placeholders';
+@import "demo/base/colors";
+@import "demo/base/typography";
+@import "demo/base/grid";
+@import "demo/base/placeholders";
 
-@import 'demo/shared/header-primary';
-@import 'demo/shared/main-content';
-@import 'demo/shared/footer';
+@import "demo/shared/header-primary";
+@import "demo/shared/header-strapline";
+@import "demo/shared/main-content";
+@import "demo/shared/footer";
+@import "demo/shared/home-nav";
 
-@import 'demo/products/products';
-@import 'demo/products/product';
-@import 'demo/products/product-detail';
+@import "demo/products/products";
+@import "demo/products/product";
+@import "demo/products/product-detail";
 
-@import 'demo/news/news';
-@import 'demo/news/news-detail';
+@import "demo/news/news";
+@import "demo/news/news-detail";
 
-@import 'demo/homepage/hero';
-@import 'demo/homepage/story';
+@import "demo/homepage/hero";
+@import "demo/homepage/story";

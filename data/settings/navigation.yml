@@ -1,5 +1,6 @@
-nav_items: 
-  - {label: 'Home', path: '/'}
-  - {label: 'Products', path: '/products/'}
-  - {label: 'News', path: '/news'}
-
+nav_items:
+  - { label: "Menu", path: "/menu/" }
+  - { label: "Order Online", path: "/order-online/" }
+  - { label: "Contact Us", path: "/contact/" }
+  # - {label: 'Products', path: '/products/'}
+  # - {label: 'News', path: '/news'}
