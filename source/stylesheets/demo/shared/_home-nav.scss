@@ -18,11 +18,12 @@
     text-transform: uppercase;
     @include links-on-dark;
     @include no-underline;
-    font-weight: 600;
 
     li {
-      font-weight: 600;
       font-size: 100px;
+      a {
+        font-weight: 600;
+      }
       @media screen and (max-width: $screen-xs-max) {
         font-size: 40px;
       }
