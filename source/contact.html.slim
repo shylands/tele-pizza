@@ -1,0 +1,33 @@
+.body-container
+  .home-bg
+    = partial 'partials/shared/header-primary'
+    main.main-content.sub-content
+      .sub-header
+        h1 
+          | Get in touch 
+
+      .sub
+        .sub-section.phone
+          h2 Phone your order
+          span.sub-link
+            =link_to "028 406 2556", "tel:+44 28 4062 5566", title: 'Phone your order'
+
+        .sub-section.location
+          h2 Visit our store
+
+          .address
+            span.street-address 4 Downshire Place,
+            span.locality Banbridge,
+            span.postal-code BT32 3QT
+            span.sub-link
+              =link_to "Get directions", 'https://www.google.co.uk/maps/place/Tele+Pizza/@54.349263,-6.270966,17z/data=!3m1!4b1!4m2!3m1!1s0x4860e152b611338b:0x6027f68a6f0a8d23', title: 'Get directions'
+
+        .sub-section.social
+          h2 Social
+          span.sub-link.social-link.facebook
+            =link_to "Facebook", 'https://www.facebook.com/Tele-Pizza-Banbridge-211145934271869', title: 'Tele Pizza Facebook'
+          span.sub-link.social-link.insta
+            =link_to "Instagram", 'https://instagram.com/telepizzabanbridge', title: 'Tele Pizza Instagram'
+
+
+

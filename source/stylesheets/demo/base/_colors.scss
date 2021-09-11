@@ -1,14 +1,14 @@
 $black: #1a1919;
 $white: #ffffff;
 
-$blue: #2c5fce;
-
+$blue: #2688a0;
+$turq: #93d5db;
 $green: #0bb148;
 
 $red: #ca2727;
 $yellow: #ffdf0e;
 
-$cream: #fff4dd;
+$cream: #eccc9c;
 
 $gray: #7e7e7e;
 $gray-dark: #62646f;
@@ -19,8 +19,8 @@ $gray-border: #dde0e5;
 
 // Links
 $link: $blue;
-$link-hover: lighten($link, 10%);
-$link-active: darken($link, 2.5%);
+$link-hover: $cream;
+$link-active: $turq;
 
 $primary-color: rgba(255, 68, 0, 1);
 $secondary-color: rgba(112, 93, 86, 1);

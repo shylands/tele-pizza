@@ -5,6 +5,7 @@
   justify-content: space-between;
   .logo {
     display: flex;
+
     margin-top: 29px;
     margin-left: 30px;
     @media screen and (max-width: $screen-xs-max) {
@@ -28,10 +29,18 @@
     margin-right: 30px;
     @include links-on-dark;
     @include no-underline;
+    text-transform: uppercase;
+    font-weight: 600;
     font-size: 18px;
     li {
       display: inline-block;
       margin: 0 15px;
+      font-weight: 600;
+      letter-spacing: -0.5px;
+      a {
+        font-weight: 600;
+        text-shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
+      }
       &:last-child {
         margin-right: 0;
       }

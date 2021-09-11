@@ -1,3 +1,20 @@
+/* Breakpoints */
+
+$mobile: 480px;
+$tablet: 768px;
+$desktop: 1040px;
+$desktopLarge: 1180px;
+$max: 1340px;
+$sub: 760px;
+
+$breakpoints: (
+  "mobile": $mobile,
+  "tablet": $tablet,
+  "desktop": $desktop,
+  "desktopLarge": $desktopLarge,
+  "max": $max,
+);
+
 body {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -55,3 +72,284 @@ h3 {
     line-height: 24px;
   }
 }
+
+// Responsive Typography Resizer
+
+@mixin font-size($fs-map, $fs-breakpoints: $breakpoints) {
+  @each $fs-breakpoint, $fs-font-size in $fs-map {
+    @if $fs-breakpoint == null {
+      @include make-font-size($fs-font-size);
+    } @else {
+      // If $fs-font-size is a key that exists in
+      // $fs-breakpoints, use the value
+      @if map-has-key($fs-breakpoints, $fs-breakpoint) {
+        $fs-breakpoint: map-get($fs-breakpoints, $fs-breakpoint);
+      }
+      @media screen and (min-width: $fs-breakpoint) {
+        @include make-font-size($fs-font-size);
+      }
+    }
+  }
+}
+
+// Utility function for mixin font-size
+@mixin make-font-size($fs-font-size) {
+  // If $fs-font-size is a list, include
+  // both font-size and line-height
+  @if type-of($fs-font-size) == "list" {
+    font-size: nth($fs-font-size, 1);
+    @if (length($fs-font-size) > 1) {
+      line-height: nth($fs-font-size, 2);
+    }
+  } @else {
+    font-size: $fs-font-size;
+  }
+}
+
+// Text Styles
+
+$text-xxxxl: (
+  null: (
+    38px,
+    43px,
+  ),
+  mobile: (
+    38px,
+    43px,
+  ),
+  tablet: (
+    54px,
+    60px,
+  ),
+  desktop: (
+    62px,
+    66px,
+  ),
+  max: (
+    62px,
+    66px,
+  ),
+);
+
+$text-xxxl: (
+  null: (
+    30px,
+    35px,
+  ),
+  mobile: (
+    30px,
+    35px,
+  ),
+  tablet: (
+    44px,
+    52px,
+  ),
+  desktop: (
+    48px,
+    58px,
+  ),
+  max: (
+    48px,
+    58px,
+  ),
+);
+
+$text-xxxlsans: (
+  null: (
+    30px,
+    34px,
+  ),
+  mobile: (
+    30px,
+    34px,
+  ),
+  tablet: (
+    44px,
+    48px,
+  ),
+  desktop: (
+    48px,
+    52px,
+  ),
+  max: (
+    48px,
+    52px,
+  ),
+);
+
+@mixin title-xlarge {
+  @include font-size($text-xxxl);
+
+  font-weight: bold;
+  font-family: $serif;
+  color: $black;
+  letter-spacing: -0.24px;
+}
+
+$text-xxl: (
+  null: (
+    40px,
+    40px,
+  ),
+  mobile: (
+    40px,
+    40px,
+  ),
+  tablet: (
+    50px,
+    50px,
+  ),
+  desktop: (
+    60px,
+    60px,
+  ),
+  max: (
+    60px,
+    60px,
+  ),
+);
+
+@mixin title-large {
+  @include font-size($text-xxl);
+  font-weight: bold;
+  font-family: $serif;
+  color: $black;
+}
+
+$text-xl: (
+  null: (
+    24px,
+    30px,
+  ),
+  mobile: (
+    24px,
+    30px,
+  ),
+  tablet: (
+    30px,
+    37px,
+  ),
+  desktop: (
+    36px,
+    46px,
+  ),
+  max: (
+    36px,
+    46px,
+  ),
+);
+
+$text-lg: (
+  null: (
+    22px,
+    30px,
+  ),
+  mobile: (
+    22px,
+    30px,
+  ),
+  tablet: (
+    25px,
+    34px,
+  ),
+  desktop: (
+    30px,
+    40px,
+  ),
+  max: (
+    30px,
+    40px,
+  ),
+);
+
+$text-md: (
+  null: (
+    19px,
+    28px,
+  ),
+  mobile: (
+    19px,
+    28px,
+  ),
+  tablet: (
+    20px,
+    30px,
+  ),
+  desktop: (
+    24px,
+    36px,
+  ),
+  max: (
+    24px,
+    36px,
+  ),
+);
+
+$text: (
+  null: (
+    16px,
+    24px,
+  ),
+  mobile: (
+    16px,
+    24px,
+  ),
+  tablet: (
+    18px,
+    28px,
+  ),
+  desktop: (
+    20px,
+    31px,
+  ),
+  max: (
+    20px,
+    31px,
+  ),
+);
+
+$text-sm: (
+  null: (
+    16px,
+    24px,
+  ),
+  mobile: (
+    16px,
+    24px,
+  ),
+  tablet: (
+    16px,
+    24px,
+  ),
+  desktop: (
+    17px,
+    27px,
+  ),
+  max: (
+    17px,
+    27px,
+  ),
+);
+
+$text-xs: (
+  null: (
+    14px,
+    22px,
+  ),
+  mobile: (
+    14px,
+    22px,
+  ),
+  tablet: (
+    14px,
+    22px,
+  ),
+  desktop: (
+    15px,
+    24px,
+  ),
+  max: (
+    15px,
+    24px,
+  ),
+);

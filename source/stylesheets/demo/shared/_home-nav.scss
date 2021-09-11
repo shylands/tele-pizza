@@ -5,6 +5,7 @@
   justify-content: center;
   align-items: center;
   align-content: center;
+  margin-top: 5%;
   ul {
     display: flex;
     flex-direction: column;
@@ -18,14 +19,20 @@
     text-transform: uppercase;
     @include links-on-dark;
     @include no-underline;
+    font-family: BarlowCondensed-SemiBold;
 
     li {
-      font-size: 100px;
+      text-shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
       a {
+        font-size: 90px;
         font-weight: 600;
-      }
-      @media screen and (max-width: $screen-xs-max) {
-        font-size: 40px;
+        line-height: 110px;
+        letter-spacing: -3.3px;
+        @media screen and (max-width: $screen-xs-max) {
+          font-size: 40px;
+          line-height: 50px;
+          letter-spacing: -1.5px;
+        }
       }
     }
   }

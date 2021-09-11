@@ -34,7 +34,9 @@
     margin-right: 30px;
     @include links-on-dark;
     @include no-underline;
-    font-size: 18px;
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
+    @include font-size($text-md);
+    letter-spacing: -0.8px;
     @media screen and (max-width: $screen-xs-max) {
       margin: 11px 30px 15px;
     }

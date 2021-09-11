@@ -1,10 +1,70 @@
 .main-content {
   margin-top: 80px;
   h1 {
-    font-size: 60px;
+    @include font-size($text-xxl);
     text-transform: uppercase;
     color: $white;
     font-weight: 600;
     text-align: center;
+    letter-spacing: -1px;
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
   }
+}
+
+.sub-content {
+  margin-top: 0;
+}
+
+.sub-header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 70px;
+  @media screen and (max-width: $screen-xs-max) {
+    margin-bottom: 40px;
+  }
+}
+
+.sub {
+  background: $white;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  align-items: center;
+  align-content: center;
+  h2 {
+    @include font-size($text-lg);
+
+    text-transform: uppercase;
+    color: $black;
+    font-weight: 600;
+  }
+  a {
+    @include links-on-light;
+  }
+  p,
+  span {
+    @include font-size($text-lg);
+    text-align: center;
+  }
+}
+
+.sub-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 30px;
+}
+
+.phone {
+}
+
+.sub-link {
+  @include links-on-light;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
 }

@@ -44,8 +44,8 @@
 
 @mixin link-states {
   a {
-    text-decoration: underline;
-    font-weight: 400;
+    text-decoration: none;
+    font-weight: 600;
   }
   a:hover {
     color: $link-hover;
