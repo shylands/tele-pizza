@@ -19,7 +19,6 @@
     text-transform: uppercase;
     @include links-on-dark;
     @include no-underline;
-    font-family: BarlowCondensed-SemiBold;
 
     li {
       text-shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
