@@ -3,7 +3,8 @@ nav_items:
       label: "Menu",
       path: "https://drive.google.com/file/d/1WA_s5E7ZfxeIHX1Zq5KynHIyNJLANn6n/view?usp=sharing",
     }
-  # - { label: "Order Online", path: "/order-online/" }
   - { label: "Contact", path: "/contact/" }
+  - { label: "Store", path: "/order-online/" }
+
   # - {label: 'Products', path: '/products/'}
   # - {label: 'News', path: '/news'}
